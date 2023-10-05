@@ -1,0 +1,41 @@
+{
+  "flowId": "flow2",
+  "flowStatus": "INCOMPLETE",
+  "currentStep": {
+    "stepType": "SINGLE_OPTION_USER_PROMPT",
+    "registrationComponents": [
+      {
+        "name": "Additional Attribute Collector",
+        "id": "attrCollector2",
+        "type": "Attribute Collection",
+        "requiredParams": [
+          {
+            "name": "age",
+            "type": "int",
+            "isConfidential": false,
+            "isMandatory": true,
+            "order": 1,
+            "validationRegex": "^[\\S]{3,50}$",
+            "i18nKey": "param.age"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "type": "INFO",
+        "messageId": "msg_provide_user_info",
+        "message": "Submit the requested user attributes",
+        "context": [],
+        "i18nKey": "info.submit.user.info"
+      }
+    ]
+  },
+  "links": [
+    {
+      "name": "registration",
+      "href": "/api/registration/v1",
+      "method": "POST"
+    }
+  ]
+}

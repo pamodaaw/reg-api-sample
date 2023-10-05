@@ -1,0 +1,5 @@
+{
+  "flowType": "INITIATE",
+  "applicationId": "app2",
+  "protocol": "OIDC"
+}

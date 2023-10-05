@@ -1,0 +1,8 @@
+{
+    "flowType": "SUBMIT",
+    "flowId": "flow1",
+    "inputType" : "USER_DATA",
+    "input": {
+        "emailaddress": "johnd@gmail.com"
+    }
+}

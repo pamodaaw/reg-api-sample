@@ -1,0 +1,8 @@
+{
+    "flowType": "SUBMIT",
+    "flowId": "flow2",
+    "inputType" : "USER_DATA",
+    "input": {
+        "age": "20"
+    }
+}

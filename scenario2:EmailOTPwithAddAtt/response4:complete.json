@@ -1,0 +1,13 @@
+{
+  "flowId": "flow2",
+  "flowStatus": "COMPLETE",
+  "protocol": "OIDC",
+  "userAssertion": "", 
+  "links": [
+    {
+      "name": "authentication",
+      "href": "/api/authenticate/v1",
+      "method": "POST"
+    }
+  ]
+  }

@@ -1,0 +1,8 @@
+{
+    "flowType": "SUBMIT",
+    "flowId": "flow3",
+    "inputType" : "SELECTION",
+    "input": {
+        "registrationComponentId" : "e5bb7814-35a7-11ee-be56-0242ac120002"
+    }
+}

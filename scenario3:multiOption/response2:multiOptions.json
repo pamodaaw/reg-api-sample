@@ -1,0 +1,35 @@
+{
+    "flowId": "flow1",
+    "flowStatus": "INCOMPLETE",
+    "currentStep": {
+      "stepType": "MULTI_OPTIONS_PROMPT",
+      "registrationComponents": [
+        {
+          "name": "Password Onboarder",
+          "id": "e5bb7814-35a7-11ee-be56-0242ac120002",
+          "type": "Credential Onboarder"
+        },
+        {
+          "name": "Email OTP",
+          "id": "fb998260-35a8-11ee-be56-0242ac120002",
+          "type": "OTP Validator"
+        }
+      ],
+      "messages": [
+        {
+          "type": "INFO",
+          "messageId": "msg_multi_options_prompt",
+          "message": "Select an option to proceed the registration",
+          "context": [],
+          "i18nKey": "info.select.option"
+        }
+      ]
+    },
+    "links": [
+      {
+        "name": "registration",
+        "href": "/api/registration/v1",
+        "method": "POST"
+      }
+    ]
+  }

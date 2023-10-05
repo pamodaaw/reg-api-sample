@@ -1,0 +1,59 @@
+{
+  "flowId": "flow3",
+  "flowStatus": "INCOMPLETE",
+  "currentStep": {
+    "stepType": "SINGLE_OPTION_USER_PROMPT",
+    "registrationComponents": [
+      {
+        "name": "Basic Attribute Collector",
+        "id": "e54636fe-2f7a-11ee-be56-0242ac120002",
+        "type": "Attribute Collection",
+        "requiredParams": [
+          {
+            "name": "username",
+            "type": "STRING",
+            "isConfidential": false,
+            "isMandatory": true,
+            "order": 1,
+            "validationRegex": "^[\\S]{3,50}$",
+            "i18nKey": "param.username"
+          },
+          {
+            "name": "firstname",
+            "type": "STRING",
+            "isConfidential": false,
+            "isMandatory": true,
+            "order": 2,
+            "validationRegex": null,
+            "i18nKey": "param.firstname"
+          },
+          {
+            "name": "lastname",
+            "type": "STRING",
+            "isConfidential": false,
+            "isMandatory": true,
+            "order": 3,
+            "validationRegex": null,
+            "i18nKey": "param.lastname"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "type": "INFO",
+        "messageId": "msg_provide_user_info",
+        "message": "Submit the requested user attributes",
+        "context": [],
+        "i18nKey": "info.submit.user.info"
+      }
+    ]
+  },
+  "links": [
+    {
+      "name": "registration",
+      "href": "/api/registration/v1",
+      "method": "POST"
+    }
+  ]
+}
