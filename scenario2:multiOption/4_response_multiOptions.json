@@ -2,17 +2,23 @@
     "flowId": "flow1",
     "flowStatus": "INCOMPLETE",
     "currentStep": {
-      "stepType": "MULTI_OPTIONS_PROMPT",
+      "stepType": "MULTI_OPTIONS",
       "registrationComponents": [
         {
-          "name": "Password Onboarder",
-          "id": "e5bb7814-35a7-11ee-be56-0242ac120002",
-          "type": "Credential Onboarder"
+          "id": "werte0-35a8-11ee-be56-0242ac120002",
+          "name": "Default Password Onboarder",
+          "executor": "PasswordOnboarder",
+          "metadata": {
+            "i18nKey": "regExecutor.passwordOnboarder"
+          }
         },
         {
-          "name": "Email OTP",
           "id": "fb998260-35a8-11ee-be56-0242ac120002",
-          "type": "OTP Validator"
+          "name": "My Email OTP",
+          "executor": "EmailOTP",
+          "metadata": {
+            "i18nKey": "regExecutor.emailotp"
+          }
         }
       ],
       "messages": [

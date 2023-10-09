@@ -1,8 +1,0 @@
-{
-    "flowType": "SUBMIT",
-    "flowId": "flow2",
-    "inputType" : "USER_DATA",
-    "input": {
-        "otp": "JK134TY"
-    }
-}
