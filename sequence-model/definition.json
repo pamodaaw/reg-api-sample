@@ -1,0 +1,26 @@
+{
+    "applicationId": "string",
+    "registrationSequence": {
+        "type": "DEFAULT/USER-DEFINED/DERIVED",
+        "enableAutoLogin": "boolean",
+        "userstoreForRegistration": "string",
+        "steps": [
+            {
+                "stepId": "int",
+                "options" : [
+                    {
+                        "stepExecutorId" : "string",
+                        "executor": "string",
+                        "properties": [
+                            {
+                                "key": "string",
+                                "value": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "script" : "javascriptString"
+    }
+}

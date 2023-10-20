@@ -1,0 +1,36 @@
+{
+    "applicationId": "app1",
+    "registrationSequence": {
+        "type": "USER_DEFINED",
+        "enableAutoLogin": true,
+        "userstoreForRegistration": "DEFAULT",
+        "steps": [
+            {
+                "stepId": "1",
+                "options" : [
+                    {
+                        "stepExecutorId" : "passwordOnboarder",
+                        "executor": "PasswordOnboarder",
+                        "properties": []
+                    },
+                    {
+                        "stepExecutorId" : "emailOTPVerifier",
+                        "executor": "EmailOTP",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "stepId": "2",
+                "options" : [
+                    {
+                        "stepExecutorId" : "emailOTPVerifier",
+                        "executor": "EmailOTP",
+                        "properties": []
+                    }
+                ]
+            }
+        ],
+        "script" :"need to write the javascript script for the condition."
+    }
+}

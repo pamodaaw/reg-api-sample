@@ -1,0 +1,91 @@
+{
+    "applicationId": "a2pp",
+    "registrationSequence": {
+        "type": "USER_DEFINED",
+        "enableAutoLogin": true,
+        "userstoreForRegistration": "ABC",
+        "steps": [
+            {
+                "stepId": "1",
+                "options" : [
+                    {
+                        "stepExecutorId" : "passwordOnboarder",
+                        "executor": "PasswordOnboarder",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "stepId": "2",
+                "options" : [
+                    {
+                        "stepExecutorId" : "emailOTPVerifier",
+                        "executor": "EmailOTP",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "stepId": "3",
+                "options" : [
+                    {
+                        "stepExecutorId" : "locationCollector",
+                        "executor": "AttributeCollector",
+                        "properties": [
+                            {
+                                "key": "mandatoryAttributes",
+                                "value": "http://wso2.org/claims/country"
+                            },
+                            {
+                                "key": "requestedAttributes",
+                                "value": "http://wso2.org/claims/postalcode, http://wso2.org/claims/stateorprovince"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "stepId": "4",
+                "options" : [
+                    {
+                        "stepExecutorId" : "passportNumberCollector",
+                        "executorCategory": "AttributeCollector",
+                        "properties": [
+                            {
+                                "key": "mandatoryAttributes",
+                                "value": "http://wso2.org/claims/passportNumber"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "stepId": "5",
+                "options" : [
+                    {
+                        "stepExecutorId" : "nicCollector",
+                        "executorCategory": "AttributeCollector",
+                        "properties": [
+                            {
+                                "key": "mandatoryAttributes",
+                                "value": "http://wso2.org/claims/nic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "stepId": "6",
+                "options" : [
+                    {
+                        "stepExecutorId" : "mobileVerifier",
+                        "executorCategory": "SMSOTP",
+                        "properties": []
+                    }
+                ]
+            }
+
+        ],
+        "script" :"need to write the javascript script for the condition."
+    }
+}
