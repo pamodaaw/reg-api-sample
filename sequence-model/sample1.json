@@ -1,10 +1,9 @@
 {
     "applicationId": "app1",
     "registrationSequence": {
-        "type": "USER_DEFINED",
         "enableAutoLogin": true,
         "userstoreForRegistration": "DEFAULT",
-        "steps": [
+        "stepDefinitions": [
             {
                 "stepId": "1",
                 "options" : [
@@ -31,6 +30,6 @@
                 ]
             }
         ],
-        "script" :"need to write the javascript script for the condition."
+        "flowDefinition" : "Start\nExecute step A\nWhen step A is completed\n\tif selected option is Password\n\t\texecute step B\nComplete"
     }
 }

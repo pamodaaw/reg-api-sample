@@ -1,10 +1,9 @@
 {
-    "applicationId": "a2pp",
+    "applicationId": "app2",
     "registrationSequence": {
-        "type": "USER_DEFINED",
         "enableAutoLogin": true,
         "userstoreForRegistration": "ABC",
-        "steps": [
+        "stepDefinitions": [
             {
                 "stepId": "1",
                 "options" : [
@@ -86,6 +85,6 @@
             }
 
         ],
-        "script" :"need to write the javascript script for the condition."
+        "flowDefinition" : "Start\nExecute step 1\nExecute step 2\nExecute step 3\nWhen step 3 is completed\n\tif residence of SL\n\t\texecute step 5\n\telse\n\t\texecute step 4\nExecute step 6\nComplete"
     }
 }
