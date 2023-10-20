@@ -7,11 +7,15 @@ Scenario 1:
     1. Onboard password | Continue with email OTP
     2. Verify email address
 * script:
+```
     execute step 1
     Once step 1 is completed
-        if selected option is password
+        if selected option is Password
             execute step 2
     Complete
+```
+
+![Alt text](reference-images/image-1.png)
 
 Scenario 2:
 ------------
@@ -26,6 +30,7 @@ Scenario 2:
     5. Collect the NIC
     6. Verify mobile number
 * script
+```
     execute step 1
     execute step 2
     execute step 3
@@ -36,6 +41,9 @@ Scenario 2:
             execute step 4
     Execute step 6
     Complete
+```
+
+![Alt text](reference-images/image.png)
 
  <!-- 
  Scenario 2:
