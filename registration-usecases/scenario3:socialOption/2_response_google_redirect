@@ -1,0 +1,32 @@
+{
+  "flowId": "be568d2-2d1e-11ee-d13ec-0242ac120002",
+  "flowStatus": "INCOMPLETE",
+  "nextStep": {
+    "stepType": "SINGLE_OPTION",
+    "registrationStepExecutors": [
+      {
+        "id": "b2f7ae566fe-e568-11ee-be56-e568GhlbnR",
+        "name": "Google Registrator",
+        "executor": "Google Registration Executor",
+        "metadata": {
+          "i18nKey": "regExecutor.googleHandler",
+          "promptType": "REDIRECTION_PROMPT",
+          "params": [],
+          "additionalData": {
+              "redirectUrl": "https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fexample-app.com%2Fredirect&state=e12f-ed27-49e5-ad0a-8bbb5671d81e%2COIDC&client_id=231644702133-ds23592jt.apps.googleusercontent.com&scope=openid"
+          }
+        }
+      }
+    ],
+    "messages": [
+      {
+        "type": "INFO",
+        "messageId": "msg_redirect_google",
+        "message": "Continue with Google",
+        "context": [],
+        "i18nKey": "info.redirect.google"
+      }
+    ]
+  },
+  "links": []
+}

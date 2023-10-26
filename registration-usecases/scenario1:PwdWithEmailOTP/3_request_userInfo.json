@@ -1,0 +1,12 @@
+{
+    "flowId": "d13ec8d2-2d1e-11ee-be56-0242ac120002",
+    "selectedRegistrationExecutor": {
+      "registrationExecutorId": "e54636fe-2f7a-11ee-be56-0242ac120002",
+      "params": {
+        "username": "johnd",
+        "firstname": "John",
+        "lastname": "Doe",
+        "email": "johnd@gmail.com"
+      }
+    }
+}
