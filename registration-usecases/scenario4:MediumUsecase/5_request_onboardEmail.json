@@ -1,0 +1,9 @@
+{
+    "flowId": "1ce24264-a862-40e5-8f55-c5a981dd3dc0",
+    "selectedRegistrationExecutor": {
+      "registrationExecutorId": "EmailOTP",
+      "params": {
+        "http://wso2.org/claims/emailaddress": "pamoda.testing@gmail.com"
+      }
+    }
+  }

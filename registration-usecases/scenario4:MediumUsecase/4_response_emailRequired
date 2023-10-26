@@ -1,0 +1,35 @@
+{
+    "flowId": "1ce24264-a862-40e5-8f55-c5a981dd3dc0",
+    "flowStatus": "INCOMPLETE",
+    "nextStep": {
+        "stepType": "SINGLE_OPTION",
+        "registrationStepExecutors": [
+            {
+                "id": "EmailOTP",
+                "name": "Email",
+                "executor": "EmailOTPVerifier",
+                "metadata": {
+                    "i18nKey": "executor.emailOTP",
+                    "promptType": "USER_PROMPT",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/emailaddress",
+                            "isConfidential": false,
+                            "isMandatory": true,
+                            "order": 0
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            }
+        ],
+        "messages": [
+            {
+                "type": "INFO",
+                "message": "Set the email address to proceed.",
+                "context": []
+            }
+        ]
+    },
+    "links": []
+}

@@ -1,0 +1,45 @@
+{
+    "flowId": "1ce24264-a862-40e5-8f55-c5a981dd3dc0",
+    "flowStatus": "INCOMPLETE",
+    "nextStep": {
+        "stepType": "MULTI_OPTIONS",
+        "registrationStepExecutors": [
+            {
+                "id": "BasicAuthenticator",
+                "name": "Username & Password",
+                "executor": "Username & Password",
+                "metadata": {
+                    "i18nKey": "executor.Username & Password",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/username",
+                            "isConfidential": false,
+                            "isMandatory": true,
+                            "order": 0
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            },
+            {
+                "id": "EmailOTP",
+                "name": "Email",
+                "executor": "Email",
+                "metadata": {
+                    "i18nKey": "executor.Email",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/emailaddress",
+                            "isConfidential": false,
+                            "isMandatory": true,
+                            "order": 0
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            }
+        ],
+        "messages": []
+    },
+    "links": []
+}

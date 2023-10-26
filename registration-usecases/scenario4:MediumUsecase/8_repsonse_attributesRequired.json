@@ -1,0 +1,47 @@
+{
+    "flowId": "1ce24264-a862-40e5-8f55-c5a981dd3dc0",
+    "flowStatus": "INCOMPLETE",
+    "nextStep": {
+        "stepType": "SINGLE_OPTION",
+        "registrationStepExecutors": [
+            {
+                "id": "AttributeCollectorBasedOnAppClaims",
+                "name": "AttributeCollector",
+                "executor": "AttributeCollector",
+                "metadata": {
+                    "i18nKey": "executor.attributeCollection",
+                    "promptType": "USER_PROMPT",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/country",
+                            "type": "STRING",
+                            "isConfidential": false,
+                            "isMandatory": false,
+                            "order": 0,
+                            "validationRegex": "validationRegex_claim_should_support",
+                            "i18nKey": "i18nKey_claim_should_support"
+                        },
+                        {
+                            "name": "http://wso2.org/claims/dob",
+                            "type": "STRING",
+                            "isConfidential": false,
+                            "isMandatory": true,
+                            "order": 1,
+                            "validationRegex": "validationRegex_claim_should_support",
+                            "i18nKey": "i18nKey_claim_should_support"
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            }
+        ],
+        "messages": [
+            {
+                "type": "INFO",
+                "message": "User input required",
+                "context": []
+            }
+        ]
+    },
+    "links": []
+}
