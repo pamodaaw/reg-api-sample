@@ -1,0 +1,10 @@
+curl --location 'https://localhost:9443/t/carbon.super/oauth2/authorize/' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id=n5C__WWdofP_fgme37PN4zw9d2ca' \
+--data-urlencode 'response_type=code' \
+--data-urlencode 'redirect_uri=https://localhost:3000' \
+--data-urlencode 'state=logpg' \
+--data-urlencode 'scope=openid internal_login' \
+--data-urlencode 'response_mode=direct' \
+--data-urlencode 'prompt=create'

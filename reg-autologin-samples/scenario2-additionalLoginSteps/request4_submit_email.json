@@ -1,0 +1,9 @@
+{
+    "flowId": "5e376101-74a7-4421-bd4c-e8c29aac4167",
+    "selectedRegistrationExecutor": {
+      "registrationExecutorId": "QmFzaWNBdXRoZW50aWNhdG9y",
+      "params": {
+        "http://wso2.org/claims/emailaddress": "pamoda@wso2.com"
+      }
+    }
+  }

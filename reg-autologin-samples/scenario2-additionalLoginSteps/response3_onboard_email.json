@@ -1,0 +1,38 @@
+{
+    "flowId": "e565f5ed-8400-40c0-b590-c747e5dff644",
+    "flowStatus": "INCOMPLETE",
+    "nextStep": {
+        "stepType": "SINGLE_OPTION",
+        "registrationStepExecutors": [
+            {
+                "id": "AttributeCollectorBasedOnAppClaims",
+                "name": "AttributeCollection",
+                "executor": "AttributeCollector",
+                "metadata": {
+                    "i18nKey": "executor.attributeCollection",
+                    "promptType": "USER_PROMPT",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/emailaddress",
+                            "type": "STRING",
+                            "isConfidential": false,
+                            "isMandatory": false,
+                            "order": 0,
+                            "validationRegex": "validationRegex_claim_should_support",
+                            "i18nKey": "i18nKey_claim_should_support"
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            }
+        ],
+        "messages": [
+            {
+                "type": "INFO",
+                "message": "User input required",
+                "context": []
+            }
+        ]
+    },
+    "links": []
+}

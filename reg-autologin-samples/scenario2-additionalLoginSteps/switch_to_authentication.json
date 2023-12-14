@@ -1,0 +1,37 @@
+{
+    "flowId": "5e376101-74a7-4421-bd4c-e8c29aac4167",
+    "flowStatus": "INCOMPLETE",
+    "flowType": "AUTHENTICATION",
+    "nextStep": {
+        "stepType": "AUTHENTICATOR_PROMPT",
+        "authenticators": [
+            {
+                "authenticatorId": "ZW1haWwtb3RwLWF1dGhlbnRpY2F0b3I6TE9DQUw",
+                "idp": "LOCAL",
+                "metadata": {
+                    "i18nKey": "authenticator.email.otp",
+                    "promptType": "USER_PROMPT",
+                    "params": [
+                        {
+                            "param": "username",
+                            "type": "STRING",
+                            "order": 0,
+                            "i18nKey": "username.param",
+                            "confidential": false
+                        }
+                    ]
+                },
+                "requiredParams": [
+                    "username"
+                ]
+            }
+        ]
+    },
+    "links": [
+        {
+            "name": "authentication",
+            "href": "https://localhost:9443/t/carbon.super/oauth2/authn",
+            "method": "POST"
+        }
+    ]
+}

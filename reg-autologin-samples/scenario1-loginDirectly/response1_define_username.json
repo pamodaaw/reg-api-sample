@@ -1,0 +1,35 @@
+{
+    "flowId": "5e376101-74a7-4421-bd4c-e8c29aac4167",
+    "flowStatus": "INCOMPLETE",
+    "nextStep": {
+        "stepType": "SINGLE_OPTION",
+        "registrationStepExecutors": [
+            {
+                "id": "QmFzaWNBdXRoZW50aWNhdG9y",
+                "name": "BasicAuthenticator",
+                "executor": "PasswordOnboarding",
+                "metadata": {
+                    "i18nKey": "executor.passwordOnboarding",
+                    "promptType": "USER_PROMPT",
+                    "params": [
+                        {
+                            "name": "http://wso2.org/claims/username",
+                            "isConfidential": false,
+                            "isMandatory": true,
+                            "order": 0
+                        }
+                    ],
+                    "additionalData": {}
+                }
+            }
+        ],
+        "messages": [
+            {
+                "type": "INFO",
+                "message": "Define a username",
+                "context": []
+            }
+        ]
+    },
+    "links": []
+}
